@@ -16,18 +16,9 @@ public class Factorial {
      */
     public static Scanner reader = new Scanner(System.in);
     public static void main(String[] args) {
+        Methods method = new Methods();
         System.out.println("Factorial of : ");
         int fact = reader.nextInt();
-        System.out.println((int)Factorial(fact));
+        System.out.println((int)method.Factorial(fact));
     }
-    
-    public static double Factorial(int fact)
-    {
-        if(fact == 0)
-            return 0;
-        else if(fact == 1)
-            return 1;
-        else
-            return fact * Factorial(fact-1);
-    }//end of Factorial()
 }
